@@ -1,0 +1,36 @@
+{% block title %} Users in the system {% endblock %}
+
+{% block content %}
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>City</th>
+                <th>Address</th>
+                <th>Pin</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for student in students %}
+                <tr>
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.city }}</td>
+                    <td>{{ student.address }}</td>
+                    <td>{{ student.pin }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+{% endblock %}
+
+
+
+
+
+
+
+
